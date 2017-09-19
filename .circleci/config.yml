@@ -36,4 +36,4 @@ jobs:
       - run: npm install express --save
       - run: npm config set foo:part 3000
       - run: npm install pm2
-      - run: pm2 start hello.js
+      - run: npm start
