@@ -35,11 +35,3 @@ jobs:
 
       - run: npm config set foo:part 3000
       - run: npm start
-        
-  test:
-    docker:
-      - image: circleci/node:7.10
-    steps:
-      - run: npm config set foo:port 3000
-      - run: npm start
-      
