@@ -1,12 +1,12 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "hello-world",
+  "description": "hello-world with circleci",
   "main": "hello.js",
   "config": { "port": "3000" },
   "scripts": {
     "start": "pm2 start hello.js" 
   },
-  "author": "",
+  "author": "steven",
   "license": "ISC"
 }
