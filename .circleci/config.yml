@@ -33,5 +33,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - run: npm install express --save
       - run: npm config set foo:part 3000
       - run: npm start
