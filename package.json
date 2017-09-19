@@ -5,7 +5,7 @@
   "main": "hello.js",
   "config": { "port": "3000" },
   "scripts": {
-    "start": "node hello.js" 
+    "start": "node hello.js > /dev/null 2>&1 && ps axf | grep nodex | grep -v grep | awk '{print "kill -9 " $1}'" 
   },
   "author": "steven",
   "license": "ISC"
