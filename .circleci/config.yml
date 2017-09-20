@@ -37,5 +37,5 @@ jobs:
       - run: npm config set foo:part 3000
       - run: npm install pm2
       - run: npm install syntax-error --save
-      - run: npm install shelljs --save
+      - run: npm install shelljs
       - run: npm check
