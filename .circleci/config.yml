@@ -39,4 +39,4 @@ jobs:
       - run: npm install fs
       - run: npm install syntax-error --save
       #- run: npm install shelljs
-      - run: npm check
+      - run: npm start
