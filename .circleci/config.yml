@@ -35,4 +35,5 @@ jobs:
 
       # Install ansible
       - run: sudo apt install -y ansible
-      - run: la -la
+      - run: ls -la
+      - run: python --version
