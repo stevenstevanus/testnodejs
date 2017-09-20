@@ -35,5 +35,6 @@ jobs:
 
       # Install ansible
       - run: sudo apt install -y ansible
-      - run: ls -la
-      - run: python --version
+      - run: git clone https://github.com/stevenstevanus/ansible_circleci.git
+      - run: sudo cp ansible_circleci/hosts /etc/ansible/hosts
+      - run: ansible-playbook deploy.yml
