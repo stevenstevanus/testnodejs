@@ -6,14 +6,8 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/node:7.10
       
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
     working_directory: ~/repo
 
     steps:
@@ -37,5 +31,4 @@ jobs:
       - run: npm config set foo:part 3000
       - run: npm install pm2
       - run: npm install syntax-error --save
-      #- run: npm install shelljs
       - run: npm start
