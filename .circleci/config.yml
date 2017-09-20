@@ -38,5 +38,5 @@ jobs:
       - run: npm install pm2
       - run: npm install fs
       - run: npm install syntax-error --save
-      - run: npm install shelljs
+      #- run: npm install shelljs
       - run: npm check
