@@ -34,4 +34,4 @@ jobs:
       - run: npm start
 
       # Install ansible
-      - run: sudo apt install ansible
+      - run: sudo apt install -y ansible
