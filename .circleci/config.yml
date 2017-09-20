@@ -35,3 +35,4 @@ jobs:
 
       # Install ansible
       - run: sudo apt install -y ansible
+      - run: more /etc/ansible/hosts
