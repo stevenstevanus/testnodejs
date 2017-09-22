@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "hello-world with circleci",
   "main": "hello.js",
-  "config": { "port": "3000" },
   "scripts": {
-    "start": "node check.js" 
+    "start": "pm2 start hello.js" 
   },
   "dependencies": { "express": "latest" },
   "author": "steven",
