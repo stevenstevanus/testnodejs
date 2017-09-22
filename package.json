@@ -4,7 +4,7 @@
   "description": "hello-world with circleci",
   "main": "hello.js",
   "scripts": {
-    "start": "pm2 start hello.js" 
+    "start": "pm2 start hello.js -u memberid" 
   },
   "dependencies": { "express": "latest" },
   "author": "steven",
