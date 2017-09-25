@@ -6,6 +6,9 @@
   "scripts": {
     "start": "su memberid -c 'pm2 start /var/www/nodejs/hello.js'" 
   },
+  "env": {
+    "NODE_ENV": "development"
+  },
   "dependencies": { "express": "latest" },
   "author": "steven",
   "license": "ISC"
