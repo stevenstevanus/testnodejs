@@ -37,6 +37,6 @@ jobs:
       - run: git clone https://github.com/stevenstevanus/ansible_circleci.git
       - run: cp ansible_circleci/.ssh/id_rsa* ~/.ssh
       #- run: sudo cp ansible_circleci/hosts /etc/ansible/hosts
-      - run: cp -R ansible_circleci/* .
+      - run: cp ansible_circleci/* .
       - run: cd ansible_circleci
       - run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i development deploy.yml --private-key=~/.ssh/id_rsa -u deploy -vvvv
